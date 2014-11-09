@@ -1,0 +1,38 @@
+html {
+    margin: 10px;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+.controls {
+    padding: 15px;
+}
+
+.grid {
+    position: relative;
+    top: 0px;
+}
+
+.cell {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border:1px solid mediumvioletred;
+    cursor: pointer;
+}
+
+.alive {
+    background: mediumvioletred;
+}
+
+.alive:hover {
+    background: palevioletred;
+}
+
+.dead {
+    background: ghostwhite;
+}
+
+.dead:hover {
+    background: gainsboro;
+}
+

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>LIFE</title>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/lodash.min.js"></script>
+        <script src="bin/app.js"></script>
+        <script src="bin/matrixHelper.js"></script>
+        <script src="bin/lifeMachine.js"></script>
+        <script src="bin/cell.js"></script>
+        <script src="bin/grid.js"></script>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body ng-app="lifeApp" ng-controller="AppController" ng-mousedown="onMouseDown()" ng-mouseup="onMouseUp()">
+        <h1>CONWAY'S GAME OF LIFE</h1>
+        <div class="controls">
+            <a href="#" ng-click="onGenerate()">One Generation</a> |
+            <a href="#" ng-click="onPlay()">{{playButtonLabel}}</a> |
+            <a href="#" ng-click="onKill()">Kill</a> |
+            <a href="#" ng-click="onPollute()">Pollute</a>
+        </div>
+        <grid life-machine="lifeMachine" grid-height="35" grid-width="60" cell-size="18" drawing="draw"></grid>
+    </body>
+</html>
